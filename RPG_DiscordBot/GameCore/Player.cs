@@ -14,13 +14,15 @@ namespace RPG_DiscordBot.GameCore
         public int XP { get; set; } // uint would give problems if we try to take away more xp then we have
         public int Cents { get; set; } // Future config would allow currency to be displayed in either dollars or cents. So money is stored in cents
 
-        public Inventory 
+        public Inventory Backpack { get; set; }
 
         // 
 
         public Player(string Name)
         {
             this.Name = Name; // I think the "this.Name" makes it more readable
+
+            Backpack = new Inventory();
         }
     }
 }
