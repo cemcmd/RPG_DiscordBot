@@ -53,11 +53,24 @@ namespace RPG_DiscordBot.GameCore
             return Players[id];
         }
 
-        public static bool RegisterPlayer(ulong id, string name) // adds player to the list. false if failed
+        public static bool RegisterPlayer(ulong id, string name, int SkillSetIndex) // adds player to the list. false if failed
         {
             if (Players.ContainsKey(id))
                 return false;
             Players.Add(id, new Player(name)); // nice and compact
+
+            Players[id].LoadFromSkillSet(GameData.SkillSets[SkillSetIndex]);
+
+            Save();
+            return true;
+        }
+
+        public static bool DeregisterPlayer(ulong id)
+        {
+            if (!Players.ContainsKey(id)) // If the dictionary doesnt even have the player
+                return false;
+
+            Players.Remove(id);
 
             Save();
             return true;

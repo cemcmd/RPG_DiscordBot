@@ -3,6 +3,8 @@
   "&ChatHelpDesc": "]Register [name] (Registers you into the game)\n]Playerinfo (Views your character information)",
   "&ChatRegisterSucess": "Player **{0}** has been registered",
   "&ChatRegisterFailed": "Unable to register player. Have you already been registered?",
-  "&ChatPlayerInfoDesc": "Name: **{0}**\nHealth: **{1}** / **{2}**\nXP: **{3}**\nMoney: **{4}**",
-  "&ChatPlayerInfoTitle": "Player info"
+  "&ChatPlayerInfoDesc": "Name: **{0}**\nHealth: **{1}** / **{2}**\nXP: **{3}**\nMoney: **{4}**\nLuck: **{5}**",
+  "&ChatPlayerInfoTitle": "Player info",
+
+  "&ErrorFileNotFound": "ERROR: file **{0}** was not found"
 }

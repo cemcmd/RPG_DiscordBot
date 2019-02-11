@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_DiscordBot", "RPG_DiscordBot\RPG_DiscordBot.csproj", "{56825A66-F281-4610-8389-D37F3625B883}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_DiscordBot_Generator", "RPG_DiscordBot_Generator\RPG_DiscordBot_Generator.csproj", "{5243C224-141C-4092-927A-672B2DA91031}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{56825A66-F281-4610-8389-D37F3625B883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56825A66-F281-4610-8389-D37F3625B883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56825A66-F281-4610-8389-D37F3625B883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5243C224-141C-4092-927A-672B2DA91031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5243C224-141C-4092-927A-672B2DA91031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5243C224-141C-4092-927A-672B2DA91031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5243C224-141C-4092-927A-672B2DA91031}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,7 +12,7 @@ namespace RPG_DiscordBot.GameCore
 {
     class Inventory
     {
-        public List<Item> Items { get; set; }
+        public List<ItemData> Items { get; set; }
 
         public int MaxItems { get; set; }
 
@@ -21,7 +21,7 @@ namespace RPG_DiscordBot.GameCore
 
         public Inventory()
         {
-            Items = new List<Item>();
+            Items = new List<ItemData>();
             MaxItems = 12;
             InfiniteItemStack = false;
             InfiniteSpace = false;

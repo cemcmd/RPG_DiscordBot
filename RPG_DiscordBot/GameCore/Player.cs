@@ -13,6 +13,7 @@ namespace RPG_DiscordBot.GameCore
 
         public int XP { get; set; } // uint would give problems if we try to take away more xp then we have
         public int Cents { get; set; } // Future config would allow currency to be displayed in either dollars or cents. So money is stored in cents
+        public int Luck { get; set; } // Helps with random
 
         public Inventory Backpack { get; set; }
 
@@ -20,9 +21,17 @@ namespace RPG_DiscordBot.GameCore
 
         public Player(string Name)
         {
-            this.Name = Name; // I think the "this.Name" makes it more readable
+            this.Name = Name; // I think the "this.Name" makes it more readable. Though I dont seem to be consistant with it
 
             Backpack = new Inventory();
+        }
+
+        public void LoadFromSkillSet(SkillSet set)
+        {
+            Backpack.MaxItems = set.InventoryMaxItems;
+            Luck = set.Luck;
+            MaxHealth = set.MaxHealth;
+            Health = set.MaxHealth;
         }
     }
 }

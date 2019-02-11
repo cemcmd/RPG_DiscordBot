@@ -21,7 +21,8 @@ namespace RPG_DiscordBot.GameCore
                 player.Health,
                 player.MaxHealth,
                 player.XP,
-                player.Cents );
+                player.Cents,
+                player.Luck );
 
             embedbuild
                 .WithTitle(title)
