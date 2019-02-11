@@ -31,5 +31,23 @@ namespace RPG_DiscordBot.GameCore
 
             return embedbuild.Build();
         }
+
+        public static Embed GetSkillSetList()
+        {
+            EmbedBuilder embedBuild = new EmbedBuilder();
+
+            string title = Util.GetAlert("&ChatSkillSetInfoTitle");
+            //string desc = Util.GetAlert("&ChatSkillSetInfoDesc");
+            embedBuild
+                .WithTitle(title)
+                .WithColor(Color.DarkBlue);
+
+            for(int i = 0; i < GameData.SkillSets.Count; i++) // finaly a loop
+            {
+                embedBuild.AddField(GameData.SkillSets[i].Name, GameData.SkillSets[i].Desc);
+            }
+
+            return embedBuild.Build();
+        }
     }
 }

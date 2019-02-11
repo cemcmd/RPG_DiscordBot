@@ -31,5 +31,11 @@ namespace RPG_DiscordBot.Modules
         {
             await Context.Channel.SendMessageAsync("", false, ChatInfoRequest.GetPlayerInfo(Context.User.Id));
         }
+
+        [Command("skillsets")]
+        public async Task SkillSetInfo()
+        {
+            await Context.Channel.SendMessageAsync("", false, ChatInfoRequest.GetSkillSetList());
+        }
     }
 }

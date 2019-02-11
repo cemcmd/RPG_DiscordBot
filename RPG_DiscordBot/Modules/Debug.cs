@@ -25,6 +25,14 @@ namespace RPG_DiscordBot.Modules
                     InventoryMaxItems = 12,
                     Luck = 1,
                     MaxHealth = 133.7
+                },
+                new SkillSet
+                {
+                    Name = "The Second example SkillSet",
+                    Desc = "The second default set",
+                    InventoryMaxItems = 6,
+                    Luck = 2,
+                    MaxHealth = 76.0
                 }
             }; // Thank you intelisence
 
