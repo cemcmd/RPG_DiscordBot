@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * A secter is like a room
+ * it contains info about
+ * whats near bye, and what
+ * paths are aviable
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 
