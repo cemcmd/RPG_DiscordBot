@@ -44,7 +44,9 @@ namespace RPG_DiscordBot.GameCore
 
             for(int i = 0; i < GameData.SkillSets.Count; i++) // finaly a loop
             {
-                embedBuild.AddField(GameData.SkillSets[i].Name, GameData.SkillSets[i].Desc);
+                embedBuild.AddField(
+                    (i+1) + ") " + GameData.SkillSets[i].Name,
+                    GameData.SkillSets[i].Desc);
             }
 
             return embedBuild.Build();

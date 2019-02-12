@@ -17,6 +17,7 @@ namespace RPG_DiscordBot.GameCore
         private const string skillSetsPath = gameDataDir + "/SkillSets.json";
         private const string itemsPath = gameDataDir + "/Items.json";
 
+        public static GameConfig Config { get; set; }
         public static List<SkillSet> SkillSets { get; set; }
         public static List<Item> Items { get; set; }
 

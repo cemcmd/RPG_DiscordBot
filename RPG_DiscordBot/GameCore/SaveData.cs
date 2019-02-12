@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using Newtonsoft.Json;
+using RPG_DiscordBot.GameCore.World;
 
 namespace RPG_DiscordBot.GameCore
 {
@@ -53,13 +54,24 @@ namespace RPG_DiscordBot.GameCore
             return Players[id];
         }
 
-        public static bool RegisterPlayer(ulong id, string name, int SkillSetIndex) // adds player to the list. false if failed
+        public static bool RegisterPlayer(ulong id, string name) // adds player to the list. false if failed
         {
-            if (Players.ContainsKey(id))
+            if (Players.ContainsKey(id)) //Does the dictionary have this id already?
                 return false;
             Players.Add(id, new Player(name)); // nice and compact
 
-            Players[id].LoadFromSkillSet(GameData.SkillSets[SkillSetIndex]);
+            //Players[id].LoadFromSkillSet(GameData.SkillSets[SkillSetIndex]);
+
+            Save();
+            return true;
+        }
+
+        public static bool SetSkillSet(ulong id, int skillSetIndx)
+        {
+            if (!Players.ContainsKey(id)) //Does the dictionary even have this person?
+                return false;
+
+            Players[id].LoadFromSkillSet(GameData.SkillSets[skillSetIndx]);
 
             Save();
             return true;

@@ -5,6 +5,8 @@
   "&ChatRegisterFailed": "Unable to register player. Have you already been registered?",
   "&ChatPlayerInfoDesc": "Name: **{0}**\nHealth: **{1}** / **{2}**\nXP: **{3}**\nMoney: **{4}**\nLuck: **{5}**",
   "&ChatPlayerInfoTitle": "Player info",
+  "&ChatSkillSetInfoTitle": "Skill Sets",
+  "&ChatSetSkillSetSucess": "Player **{0}** has been given the class **{1}**",
 
-  "&ErrorFileNotFound": "ERROR: file **{0}** was not found"
+  "&ErrorFileNotFound": "ERROR: file {0} was not found"
 }

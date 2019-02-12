@@ -17,4 +17,10 @@ namespace RPG_DiscordBot.GameCore
         public double MaxHealth; // Health is set to this as well
         public int Luck;
     }
+
+    struct GameConfig
+    {
+        public bool DispDollarFormat;
+       
+    }
 }
